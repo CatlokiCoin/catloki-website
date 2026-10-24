@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+*.secret
+*.secret.*
+node_modules/
+.DS_Store
+# internal, kept local only
+TOKEN_VERIFICATION.md
+tools/
