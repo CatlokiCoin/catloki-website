@@ -34,7 +34,7 @@
   "isPartOf": {
     "@id": "https://catloki.com/#website"
   },
-  "dateModified": "2026-11-07"
+  "dateModified": "2026-11-09"
 }
   </script>
   <link rel="stylesheet" href="/css/style.css">
@@ -42,11 +42,15 @@
     .legal{background:var(--cream,#fff6e8);color:var(--charcoal,#222);border-radius:14px;padding:1.4rem 1.2rem;margin:2rem 0}
     .legal h1{font-size:clamp(1.8rem,5vw,2.6rem);margin:0 0 .4rem}
     .legal h2{font-size:1.25rem;margin:1.8rem 0 .4rem}
+    .legal h3{font-size:1.05rem;margin:1.2rem 0 .3rem}
     .legal p,.legal li{max-width:70ch}
     .legal a{color:inherit;text-decoration:underline}
     .legal code{word-break:break-all;background:#fff;border:1px solid #e0cfae;border-radius:6px;padding:.1rem .35rem;font-size:.92em}
     .legal .btn{text-decoration:none;color:var(--cream,#fff4e0)}
     .legal .guides{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;padding:0;list-style:none;margin:.4rem 0 0}
+    .legal .jup{display:inline-block;vertical-align:-.2em;height:1em;width:auto;margin-left:.15em}
+    .legal h1 .jup{height:1.05em;vertical-align:-.12em;filter:drop-shadow(0 2px 4px rgba(0,0,0,.25))}
+    .legal .jup-btn{height:1.35em;vertical-align:-.3em;margin:0 .25em 0 .1em}
     .legal .risk{margin-top:1.6rem;padding-top:1rem;border-top:2px solid #e0cfae;font-size:.95rem}
   </style>
 </head>
@@ -54,8 +58,8 @@
   <main class="wrap">
     <article class="legal">
       <p><a href="/">&larr; CATLOKI</a></p>
-      <h1>How to buy CATLOKI on Jupiter</h1>
-      <p><em>Last updated: November 7, 2026</em></p>
+      <h1>How to buy CATLOKI on Jupiter <img class="jup" src="/assets/jupiter.svg" alt="Jupiter logo" width="40" height="40"></h1>
+      <p><em>Last updated: November 9, 2026</em></p>
       <p>CATLOKI trades on Solana decentralized exchanges. This guide shows how a swap on Jupiter works. This website does not sell tokens, cannot make transactions for you and never asks you to connect a wallet.</p>
 
       <h2>Before you start</h2>
@@ -75,10 +79,20 @@
         <li><strong>Check price impact and slippage.</strong> With limited liquidity, large swaps can move the price against you. Try a small amount first and look at the price impact before you confirm.</li>
         <li><strong>Confirm in your wallet.</strong> Only sign a transaction you understand, then check your balance after it completes.</li>
       </ol>
-      <p><a class="btn btn-primary btn-wide" href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&amp;buy=9YJN9DVpujzEA2smVVLeS5PA7Kkz67yA3JAHwFuNX91K" target="_blank" rel="noopener noreferrer">OPEN JUPITER (SOL &rarr; CATLOKI)</a></p>
+      <p><a class="btn btn-primary btn-wide" href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&amp;buy=9YJN9DVpujzEA2smVVLeS5PA7Kkz67yA3JAHwFuNX91K" target="_blank" rel="noopener noreferrer">OPEN JUPITER <img class="jup jup-btn" src="/assets/jupiter.svg" alt="" width="24" height="24"> (SOL &rarr; CATLOKI)</a></p>
       <p>You perform the swap on Jupiter, a third-party service. Market data is available on <a href="https://dexscreener.com/solana/DnWUJKTfa6FLyyU9wyEUUSgaQe94zfMzuGxfryHNkA8P" target="_blank" rel="noopener noreferrer">DexScreener</a>.</p>
 
       <h2>Common questions</h2>
+      <h3>Do I need a Solana wallet to buy CLOKI?</h3>
+      <p>Yes. A swap on a decentralized exchange is signed from a wallet you control. Install a wallet from its own official website, write the recovery phrase on paper and never type it into any website, chat or form.</p>
+      <h3>How much SOL do I need?</h3>
+      <p>That depends on the amount you want to swap plus a small reserve for network fees. There is no minimum from this website. Because liquidity is limited, start with a small test swap and check the price impact before you confirm.</p>
+      <h3>What is price impact and slippage?</h3>
+      <p>Price impact is how much your own swap moves the price. Slippage is the maximum change in price you accept between clicking and confirmation. With thin liquidity both can be large, so a small test swap is the safest way to see how they behave.</p>
+      <h3>How can I check I am buying the right token?</h3>
+      <p>Compare the output token address character by character with <code>9YJN9DVpujzEA2smVVLeS5PA7Kkz67yA3JAHwFuNX91K</code>. Fake tokens often copy the name and logo. See <a href="/how-to-verify.html">how to verify the contract</a>.</p>
+      <h3>Does this website or the team message me first?</h3>
+      <p>No. Nobody from the community will DM you first, ask for your seed phrase, or ask you to connect your wallet to a website to &ldquo;claim&rdquo; something. Treat such messages as scams.</p>
       <h3>Why does Jupiter say &ldquo;Not Verified&rdquo;?</h3>
       <p>It means the token has not been marked as verified in Jupiter&rsquo;s own list. It does not say whether the token is good or bad. Treat it as a reason to double-check the mint address.</p>
       <h3>Can I buy with something other than SOL?</h3>
